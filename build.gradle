@@ -129,7 +129,7 @@ task checkSigningRequirements {
         requiredProperties.each {
             if (project.properties[it] == null) {
                 noDice = true;
-                System.err.printf("property \"%s\" is not defined!")
+                System.err.printf("property \"%s\" is not defined!\n")
             }
         }
         if (noDice)
